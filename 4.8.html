@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");
+    div.animate({height: '300px'}, "slow");
+    div.animate({width: '300px'}, "slow");
+    div.animate({height: '100px'}, "slow");
+    div.animate({width: '100px'}, "slow");
+    div.animate({height: '300px'}, "slow");
+    div.animate({width: '300px'}, "slow");
+    div.animate({height: '100px'}, "slow");
+    div.animate({width: '100px'}, "slow");
+    div.animate({height: '300px'}, "slow");
+    div.animate({width: '300px'}, "slow");
+    div.animate({height: '100px'}, "slow");
+    div.animate({width: '100px'}, "slow");
+//    setInterval(function,2000);
+  });
+});
+// $(document).ready(function(){
+//    setInterval(callMe,2000);
+// });
+// function callMe(){
+//    $("div").animate({left:'250px'}).fadeOut().animate({left:'0'}).fadeIn();
+// }
+</script> 
+</head>
+<body>
+
+<button>Start Animation</button>
+
+<p>click the button to change height and width of box</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

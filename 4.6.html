@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p").mouseenter(function(){
+    alert("You entered p!");
+  });
+});
+</script>
+<script>
+  $(document).ready(function(){
+    $("input").focus(function(){
+      $(this).css("background-color", "yellow");
+    });
+    $("input").blur(function(){
+      $(this).css("background-color", "green");
+    });
+  });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("p").click(function(){
+        $(this).hide();
+      });
+    });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("p").on({
+          mouseenter: function(){
+            $(this).css("background-color", "lightgray");
+          },  
+          mouseleave: function(){
+            $(this).css("background-color", "lightblue");
+          }, 
+          click: function(){
+            $(this).css("background-color", "yellow");
+          }  
+        });
+      });
+      </script>
+<head>
+<style class="container">
+
+  .w3-third{
+    displayblock;
+  }
+  input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<script src=""></script>
+<body>
+
+<!--img src="img_la.jpg" alt=" " style="width:100%"-->
+
+<div class="w3-container w3-red">
+<h1>Engineeering Courses</h1>
+<p id="p">Resize this responsive page!</p>
+</div>
+<div class="w3-row-padding">
+
+<div class="w3-third"><h3>
+<img src="image.png" alt="Computer Engineering" style="width:100%"></h3>
+<p style="text-align:justify;">It is a four years (eight semester) full-time program. Out of eight semesters, seven semesters are dedicated to in house study involving course work and projects. Final semester is dedicated to Industrial Project. Students spend entire eighth semester in an IT company and do a project.</p>
+<div class="w3-left-align">
+  <img src="https://media.istockphoto.com/id/1271619512/photo/system-engineering-concept-engineers-working-in-the-office-gui.jpg?s=612x612&w=0&k=20&c=z7MxP63YTyWKqtwMa55BN0THJXb-UcsC5ISx-Rp6E74=" class="w3-round" alt="person" width="230">
+</div>
+<div><a href="computer_engineering.html" target="_blank">More Info</a></div>
+</div>
+
+<div class="w3-third"><h3>
+<img src=".png" alt="Mechanical Engineering" style="width:100%"></h3>
+<p style="text-align:justify;">The aim of the mechanical engineering is to create a flexible undergraduate educational experience in design, mathematics, modeling, computing, management, engineering science, humanities and social sciences.</p>
+<div class="w3-4">
+  <img src="https://indoreinstitute.com/wp-content/uploads/2019/12/me.jpg" class="w3-round" alt="person" width="230">
+</div>
+<div><a href="mechanical_engineering.html" target="_blank">More Info</a></div>
+</div>
+
+<div class="w3-third"><h3>
+<img src="img_avatar.png" alt="Civil Engineering" style="width:100%"></h3>
+<p style="text-align:justify;">The objective of the B.Tech graduate program in Civil Engineering is to give the understudies great comprehension of civil engineering arrangements in a global, societal and ecological setting, steady with the standards of sustainable improvement.</p>
+<div class="w3-4">
+  <img src="https://set.jainuniversity.ac.in/uploads/blog/a566f0e54ee56f75eac574c971c22b46.jpg" class="w3-round" alt="person" width="230">
+</div>
+<div><a href="civil_engineering.html" target="VARUN">More Info</a></div>
+</div>
+</div>
+<div class="container">
+  <form action="action_page.php">
+
+     
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Contact Us</label>
+    <textarea id="subject" name="Contact Us" placeholder="Write something.." style="height:200px"></textarea>
+  
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+

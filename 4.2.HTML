@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="w3-card-4 w3-margin w3-padding-large w3-round-large">
+
+        <div class="w3-container w3-red w3-round-large">
+            <h2 class="w3-center">Form fill Details Below</h2>
+        </div>
+
+        <form class="w3-container w3-margin ">
+
+            <label>First Name</label>
+            <input class="w3-input" type="text">
+
+            <label>Last Name</label>
+            <input class="w3-input" type="text">
+
+            <div class="w3-container">
+                <input class="w3-check w3-margin" type="checkbox"  id="check">
+                <label>I accept Your <u class="w3-text-blue">terms</u> and <u class="w3-text-blue" >condition</u></label>
+            </div>
+
+
+            <div class="w3-container w3-center">
+                <button class="w3-button w3-red w3-margin" id="btn-1" disabled>Submit</button>
+                <button class="w3-button w3-white w3-border w3-wide w3-margin" id="btn-2">Cancel</button>
+            </div>
+
+           
+        </form>
+
+    </div>
+</body>
+
+</html>
+
+<script src="jquery-3.6.3.min.js"></script>
+
+<!-- <script>
+    $(document).ready(function(){
+      if($("#check").prop("checked", true)){
+      console.log(true)
+      }
+      else  if($("#check").prop("checked", false)){
+        console.log(false)
+      }
+    })
+</script> -->
+
+<script>
+
+$(function() {
+    $('#check').click(function() {
+        if ($(this).is(':checked')) {
+            // $('#btn-1').attr('disabled', 'disabled');
+            $('#btn-1').removeAttr('disabled');
+        } else {
+            // $('#btn-1').removeAttr('disabled');
+            $('#btn-1').attr('disabled', 'disabled');
+        }
+    });
+});
+</script>
+

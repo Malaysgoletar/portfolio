@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Applicable Features</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+
+            $("#progressbar1").progressbar({
+                value: 90
+            });
+
+            $("#progressbar2").progressbar({
+                value: 79
+            });
+
+            $("#progressbar3").progressbar({
+                value: 72
+            });
+
+            $("#progressbar4").progressbar({
+                value: 60
+            });
+
+        $("#showdialog").click(function () {
+
+            $( "#dialog" ).dialog();
+        });
+
+        $( "input" ).checkboxradio();
+
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 id="showdialog">Progressbar Click Here</h1>
+        <h3>HTML</h3>
+        <div id="progressbar1"></div>
+
+        <h3>CSS</h3>
+        <div id="progressbar2"></div>
+
+        <h3>JS</h3>
+        <div id="progressbar3"></div>
+
+        <h3>PHP</h3>
+        <div id="progressbar4"></div>
+
+        <div id="dialog" title="Welcome My Website">
+            <p>This Dialog box shows and inform you that I have already uploaded about the my skill progress you can learn more about that.I hope this dialog box help you to find my web home page. The dialog window can be moved, resized and closed with the &apos;x&apos; icon.</p>
+          </div>
+
+    </div>
+
+    <div class="widget">
+        <h1>Fill this information using checkbox and using the radio button</h1>
+       
+        <fieldset>
+          <legend>Select a Field: </legend>
+          <label for="radio-1">Student</label>
+          <input type="radio" name="radio-1" id="radio-1">
+          <label for="radio-2">Teacher</label>
+          <input type="radio" name="radio-1" id="radio-2">
+          <label for="radio-3">Other</label>
+          <input type="radio" name="radio-1" id="radio-3">
+        </fieldset>
+       
+        <fieldset>
+          <legend> Ratings: </legend>
+          <label for="checkbox-1">	&#9733; &#9733;</label>
+          <input type="checkbox" name="checkbox-1" id="checkbox-1">
+          <label for="checkbox-2">	&#9733;	&#9733;	&#9733;</label>
+          <input type="checkbox" name="checkbox-2" id="checkbox-2">
+          <label for="checkbox-3">	&#9733;	&#9733;	&#9733;	&#9733;</label>
+          <input type="checkbox" name="checkbox-3" id="checkbox-3">
+          <label for="checkbox-4">★★★★★</label>
+          <input type="checkbox" name="checkbox-4" id="checkbox-4">
+        </fieldset>
+       
+        <fieldset>
+          <legend>What did you learnt ?: </legend>
+          <label for="checkbox-nested-1">HTML
+            <input type="checkbox" name="checkbox-nested-1" id="checkbox-nested-1">
+          </label>
+          <label for="checkbox-nested-2">CSS
+            <input type="checkbox" name="checkbox-nested-2" id="checkbox-nested-2">
+          </label>
+          <label for="checkbox-nested-3">JS
+            <input type="checkbox" name="checkbox-nested-3" id="checkbox-nested-3">
+          </label>
+          <label for="checkbox-nested-4">PHP
+            <input type="checkbox" name="checkbox-nested-4" id="checkbox-nested-4">
+          </label>
+        </fieldset>
+      </div>
+</body>
+<style>
+    h3 {
+        font-size: 1.6rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: left;
+        margin: 1px 10px;
+    }
+    h1{
+        border: none;
+        border-radius: 4px;
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        background-color: gray;
+        color: white;
+    }
+</style>
+
+</html>

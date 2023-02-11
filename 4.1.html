@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>tutorial-4-1</title>
+
+    <!-- Import jQuery cdn library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("p").add("h1").add("input")
+                    .css("background", "red");
+            });
+        });
+    </script>
+</head>
+
+<body style="text-align: center;">
+    <h1>
+        Malay Goletar
+    </h1>
+    <p>my name is Malay Goletar</p>
+
+    <p>click on the below button to change the color</p>
+    <input type="textarea">
+
+    <button>Click Me!</button>
+</body>
+
+</html>

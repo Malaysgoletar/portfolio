@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQueryUI Tabs</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">MERN technology</a></li>
+    <li><a href="#tabs-2">Data Science</a></li>
+    <li><a href="#tabs-3">Server side scripting language</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>
+        MERN is one of several variations of the MEAN stack (MongoDB Express Angular Node), where the traditional Angular.js front-end framework is replaced with React.js. Other variants include MEVN (MongoDB, Express, Vue, Node), and really any front-end JavaScript framework can work.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Data science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processes, algorithms and systems to extract or extrapolate knowledge and insights from noisy, structured and unstructured data</p>
+  </div>
+  <div id="tabs-3">
+    
+    <p>Node. js is an open source project based on the Google Chrome JavaScript Engine. It provides a platform for server-side JavaScript applications running without browsers. Hypertext Preprocessor (PHP) is one of the world's most popular server-side scripting language for building dynamic, data-driven Web applications.</p>
+  </div>
+</div>
+ 
+ 
+</body>
+</html>

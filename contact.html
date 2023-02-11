@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(156, 151, 151);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        h1{
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            color: rgb(51, 13, 13);
+        }
+        .container {
+            padding: 16px;
+            background-color: white;
+        }
+
+        input[type=text],
+        input[type=number] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+        .send{
+            margin: 3px 15px 20px 33px ;
+            border-radius: 2px;
+            box-shadow: 2px red;
+        }
+        .send, .reset{
+            font-size: large;
+            color: white;
+            background-color: rgb(6, 3, 74);
+            box-shadow:  2px 2px red;
+            cursor: pointer;
+        }
+        .buton {
+            background-color: #3d4245;
+            border: none;
+            border-radius: 10%;
+            color: white;
+            padding: 20px 34px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            cursor: pointer;
+            margin-left: 45%;
+        }
+        .buton:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contact Us</h1>
+    <form action="">
+        <div class="container">
+
+            <input type="text" placeholder=" Full Name" name="Name" id="Name" required>
+
+            <input type="text" placeholder=" Email" name="Email" id="Email" required>
+
+            <input type="text" placeholder="Subject" name="Subject" id="Subject" required>
+
+            <input type="number" placeholder="Phone" name="Phone" id="Phone" required>
+
+            <textarea name="Massage" placeholder="Massage" id="" cols="200" rows="6"></textarea>
+            <br><br><br>
+            <input type="reset" value="RESET" class="reset">
+            <input type="submit" value="SEND YOUR MASSAGE" class="send">
+        </div>
+    </form>
+
+    <a href="Assignment1_1.html" class="buton">HOME</a>
+
+</body>
+
+</html>

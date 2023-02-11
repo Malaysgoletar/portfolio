@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Menu - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#menu").menu();
+        });
+    </script>
+    <style>
+        .ui-menu {
+            width: 450px;
+            border: 2px solid ;
+            font-size: 1.6rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id="menu">
+        <li><div>Computer Engineering</div>
+        <ul>
+        <li><div>Harware System</div></li>
+        <li><div>Software System</div></li>
+        <li><div>Robotics System</div></li>
+        <li><div>Graphics System</div></li>
+        <li><div>Cyber Security</div></li>
+        </ul>
+        </li>
+
+        <li><div>Civil-Geology Engineering</div>
+            <ul>
+                <li><div>Construction Engineering</div></li>
+                <li><div>Structural Engineering</div></li>
+                <li><div>Transportation Engineering</div></li>
+                <li><div>Geotechnical Engineering</div></li>
+                </ul>
+        </li>
+        <li><div>Michenichal Engineering</div>
+            <ul>
+                <li><div>Engineering Mechanics</div></li>
+                <li><div>Engineering Thermodynamics</div></li>
+                <li><div>Fluid Mechanics.</div></li>
+                <li><div>Heat Transfer.</div></li>
+                <li><div>Nanotechnology</div></li>
+                <li><div>Microtechnology</div></li>
+                </ul>
+        </li>
+        <li><div>Electrical Engineering</div>
+            <ul>
+                <li><div>Power engineering</div></li>
+                <li><div>Control engineering</div></li>
+                <li><div>Electronic engineering</div></li>
+                <li><div>Microelectronics</div></li>
+                <li><div>Signal processing</div></li>
+                <li><div>Telecommunications engineering</div></li>
+                <li><div>Instrumentation engineering.</div></li>
+                </ul>
+        </li>
+        <li><div>Chemichal Engineering</div></li>
+        <li><div>Environment Engineering</div></li>
+    </ul>
+</body>
+</html>

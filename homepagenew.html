@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tutorial-5</h1>
+    <div class="container">
+        <ol>
+            <li>
+                <a href="1_Tab_Func.html">1st Exercise</a>
+            </li>
+            <li>
+                <a href="2_Accordion_Func.html">2nd Exercise</a>
+            </li>
+            <li>
+                <a href="3_DatePicker_Func.html">3rd Exercise</a>
+            </li>
+            <li>
+                <a href="4_WidgetMenu.html">4th Exercise</a>
+            </li>
+            <li>
+                <a href="5_Applicable_Widget.html">5th Exercise</a>
+            </li>
+            
+        </ol>
+    </div>
+</body>
+<style>
+    h1{
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid rgb(244, 203, 203);
+    background-color: rgb(249, 10, 10);
+    }
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 1px 1px gray;
+        margin: 1rem;
+    }
+    li{
+        border-radius: 3px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        flex-wrap: wrap;
+        padding: 0.5rem 0.8rem;
+        margin-top: 1rem;
+        background-color: rgb(60, 122, 151);
+        text-align: center;
+        text-decoration: none;
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.4rem;
+        padding: 5px 0px;
+    }
+    li:hover{
+        box-shadow: 1px 1px 1px 0px rgb(22, 99, 222);
+        opacity: 0.4;
+    }
+    ol{
+        display: flex;
+        display: grid;
+        grid-template-columns: auto  auto ;
+        grid-gap: 2rem;
+        margin: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+</html>
